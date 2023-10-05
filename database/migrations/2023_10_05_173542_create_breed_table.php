@@ -15,7 +15,12 @@ class CreateBreedTable extends Migration
     {
         Schema::create('breed', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->boolean('estado');
+            $table->bigInteger('id_spice')->unsigned()->index()->nullable();
             $table->timestamps();
+            $table->foreign('id_spice')->references('id')->on('species_animal');
+
         });
     }
 

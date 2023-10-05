@@ -15,6 +15,10 @@ class CreateVeterinaryTable extends Migration
     {
         Schema::create('veterinary', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre');
+            $table->string('telefono');
+            $table->string('cedula')->unique();
+            $table->string('estado');
             $table->timestamps();
         });
     }

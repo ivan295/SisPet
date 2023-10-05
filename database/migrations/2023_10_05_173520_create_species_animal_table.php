@@ -18,6 +18,7 @@ class CreateSpeciesAnimalTable extends Migration
             $table->string('nombre');
             $table->boolean('estado');
             $table->timestamps();
+
         });
     }
 
