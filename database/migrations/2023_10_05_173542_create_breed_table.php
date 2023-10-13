@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateBreedTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    
     public function up()
     {
         Schema::create('breed', function (Blueprint $table) {
